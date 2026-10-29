@@ -1,0 +1,49 @@
+:root {
+  color-scheme: dark;
+  --bg: #05070d;
+  --panel: #0b1020;
+  --line: #1d2440;
+  --fg: #e8ecff;
+  --muted: #9aa3c7;
+  --dim: #6b7499;
+  --accent: #2ee6ff;
+  --danger: #ff4d6d;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 50% -200px, #0f1a3a 0%, var(--bg) 60%) no-repeat, var(--bg);
+  color: var(--fg);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; }
+nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; padding: 8px 0 24px; font-size: 14px; }
+nav .home { display: flex; align-items: center; gap: 10px; color: var(--fg); font-weight: 600; text-decoration: none; margin-right: auto; }
+nav .home img { width: 28px; height: 28px; border-radius: 7px; }
+a { color: var(--accent); }
+nav a:not(.home) { color: var(--muted); text-decoration: none; }
+nav a:not(.home):hover, nav a[aria-current] { color: var(--accent); }
+h1 { font-size: 28px; line-height: 1.25; margin: 0 0 4px; }
+h2 { font-size: 19px; margin: 28px 0 6px; color: var(--accent); }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+p, li { color: var(--muted); }
+strong { color: var(--fg); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+.upd { font-size: 13px; color: var(--dim); }
+.lang { font-size: 13px; color: var(--dim); }
+.lang a { color: var(--dim); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--dim); }
+footer a { color: var(--dim); }
+
+/* pagina del gioco */
+.hero { text-align: center; padding: 24px 0 8px; }
+.hero img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 0 60px rgba(46, 230, 255, .25); }
+.hero h1 { font-size: 36px; margin-top: 16px; }
+.tagline { font-size: 20px; color: var(--fg); margin: 4px 0 16px; }
+.tagline em { color: var(--danger); font-style: normal; }
+.badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 16px 0; }
+.badge { padding: 10px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); color: var(--muted); font-size: 14px; text-decoration: none; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 24px 0; }
+.shots img { width: 100%; border-radius: 16px; border: 1px solid var(--line); }
+ul.feat { padding-left: 20px; }
